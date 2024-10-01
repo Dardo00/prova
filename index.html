@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Exemplo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho fixo com navegação -->
+  <header>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal com caixas separadas -->
+  <main>
+    <section id="home" class="box">
+      <h2>Início</h2>
+      <p>Esta é a página inicial do site, onde apresentamos as principais informações e novidades.</p>
+    </section>
+
+    <section id="about" class="box">
+      <h2>Sobre</h2>
+      <p>site teste.</p>
+    </section>
+
+    <section id="contact" class="box">
+      <h2>Entre em Contato</h2>
+      <form action="submit.php" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" aria-required="true" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-required="true" required>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" aria-required="true" required></textarea>
+        
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

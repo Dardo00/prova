@@ -1,0 +1,113 @@
+/* Definindo as cores principais */
+:root {
+    --primary-color: #f39c12; /* Laranja */
+    --secondary-color: #000000; /* Preto */
+    --accent-color: #ffffff; /* Branco */
+  }
+  
+  /* Estilo do corpo da página */
+  body {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
+  }
+  
+  /* Cabeçalho fixo no topo da página */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+    transition: color 0.3s;
+  }
+  
+  /* Seções do conteúdo com caixas */
+  .box {
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras leves para destacar as caixas */
+  }
+  
+  h2 {
+    color: var(--primary-color);
+  }
+  
+  /* Estilo do formulário de contato */
+  form {
+    background-color: var(--accent-color);
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    transition: background-color 0.3s;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
